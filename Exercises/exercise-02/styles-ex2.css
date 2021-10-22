@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: maroon;
+    background-color: rgb(189, 102, 102);
 }
 
 h1 {
@@ -14,12 +14,12 @@ text-decoration: underline;
 font-style: italic;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h2{
+h2 {
     color: mintcream;
     font-style: initial;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
-p{
+p {
     font-family: Arial, Helvetica, sans-serif;
     text-indent: 16px;
     color: blue;
