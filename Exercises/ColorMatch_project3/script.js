@@ -10,7 +10,7 @@ function setBackgroundColor(){
     let random2 = Math.floor(Math.random() * 255);
     let random3 = Math.floor(Math.random() * 255);
     let colorString = `${random1},${random2},${random3}`;
-    console.log('Kisses');
+    console.log('Yeah!');
     document.body.style.background = `rgb(${colorString})`;
 }
 
@@ -24,7 +24,7 @@ function changeColor (r,g,b){
     currentColor[0] = currentColor[0] %255
     currentColor[1] = currentColor[1] %255
     currentColor[2] = currentColor[2] %255
-    document.getElementById("all").style.backgroundColor = `rgb(${currentColor})`;
+    document.getElementById("buttonall").style.backgroundColor = `rgb(${currentColor})`;
     console.log(currentColor);
 
     // document.getElementById("red").style.backgroundColor = "red";

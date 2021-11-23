@@ -1,12 +1,12 @@
 body {
-    background-color: cornsilk;
+    background-color: grey;
 }
 
 button {
-  background-color:black; 
+  background-color: white;
   border: none;
-  color:white;
-  padding: 60px 40px;
+  color:grey;
+  padding: 50px 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -23,6 +23,26 @@ align-items: center;
 height: 650px;
 }
 
-.red button {
+#buttonred {
   background-color:red;
+  padding: 20px 20px;
+}
+#buttonblue{
+  background-color: blue;
+  padding: 20px 20px;
+
+}
+#buttonyellow{
+  background-color: yellow;
+  padding: 20px 20px;
+
+}
+#buttonwhite{
+  background-color: white;
+  padding: 20px 20px;
+}
+#buttonblack{
+  background-color: black;
+  padding: 20px 20px;
+
 }
