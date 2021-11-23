@@ -1,0 +1,23 @@
+li{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px black;
+    margin: 20px;
+
+}
+
+ Button Colors
+
+
+#grayButton{
+    background-color: grey;
+}
+
+#whiteButton{
+    background-color: white;
+}
+
+#blueButton{
+    background-color: blue;
+}
