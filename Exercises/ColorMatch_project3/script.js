@@ -17,11 +17,16 @@ function setBackgroundColor(){
 var currentColor = Array (0,0,0);
 
 function changeColor (r,g,b){
-    // currentColor[0] += r;
-    // currentColor[1] += g;
-    // currentColor[2] += b;
+    currentColor[0] += r;
+    currentColor[1] += g;
+    currentColor[2] += b;
     // let colorString = `${r},${g},${b}`;
-    // document.getElementsByClassName("red").style.backgroundColor = `rgb(${colorString})`;
-    document.getElementById("red").style.backgroundColor = "red";
+    currentColor[0] = currentColor[0] %255
+    currentColor[1] = currentColor[1] %255
+    currentColor[2] = currentColor[2] %255
+    document.getElementById("all").style.backgroundColor = `rgb(${currentColor})`;
+    console.log(currentColor);
+
+    // document.getElementById("red").style.backgroundColor = "red";
 
 }
