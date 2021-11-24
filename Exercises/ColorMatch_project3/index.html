@@ -10,19 +10,18 @@
 </head>
 <body>
     <script src="script.js"></script>
+
     
+
     <div class = "buttongroup">
+    <h1> Win:<span id="winCount">0</span> </h1> 
     <button id="buttonall" onclick="setBackgroundColor()"> Start </button>
-    <button id="buttonred" onclick="changeColor(32,0,0)"> </button>
-    <button id="buttonblue" onclick="changeColor(0,0,32)"> </button>
-    <button id="buttonyellow" onclick="changeColor(0,32,0)"> </button>
-    <button id="buttonblack" onclick="changeColor(-32,-32,-32)"> </button>
-    <button id="buttonwhite" onclick="changeColor(32,32,32)"> </button>
-    
+    <button id="buttonredplus" onclick="changeColor(15,0,0)"> + </button>
+    <button id="buttonredminus" onclick="changeColor(-15,0,0)"> - </button>
+    <button id="buttongreenplus" onclick="changeColor(0,15,0)"> + </button>
+    <button id="buttongreenminus" onclick="changeColor(0,-15,0)"> - </button>
+    <button id="buttonblueplus" onclick="changeColor(0,0,15)"> + </button>
+    <button id="buttonblueminus" onclick="changeColor(0,0,-15)"> - </button>
     </div>
-
- 
-
-
 </body>
 </html>

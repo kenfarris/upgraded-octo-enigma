@@ -1,12 +1,11 @@
 body {
-    background-color: grey;
+    background-color: black;
 }
 
 button {
   background-color: white;
   border: none;
-  color:grey;
-  padding: 50px 40px;
+  color:white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -16,33 +15,37 @@ button {
  
 }
 
+h1{
+  color: white;
+  font-size: 20px;
+}
+
 .buttongroup {
 display: flex;
 justify-content: center;
 align-items: center;
 height: 650px;
+
 }
 
-#buttonred {
+#buttonall {
+  color:black;
+  padding: 50px 40px;
+  margin-left: 10px;
+}
+
+#buttonredplus, #buttonredminus {
   background-color:red;
-  padding: 20px 20px;
+  padding: 15px 20px;
+  margin-left: 10px;
 }
-#buttonblue{
+#buttongreenplus,#buttongreenminus {
+  background-color:rgb(0, 255, 0);
+  padding: 15px 20px;
+  margin-left: 10px;
+}
+#buttonblueplus,#buttonblueminus {
   background-color: blue;
-  padding: 20px 20px;
-
-}
-#buttonyellow{
-  background-color: yellow;
-  padding: 20px 20px;
-
-}
-#buttonwhite{
-  background-color: white;
-  padding: 20px 20px;
-}
-#buttonblack{
-  background-color: black;
-  padding: 20px 20px;
-
+  padding: 15px 20px;
+  margin-left: 10px;
 }
