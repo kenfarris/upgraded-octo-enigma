@@ -14,6 +14,8 @@ function setBackgroundColor(){
     colorString = [random1,random2,random3]
     console.log('Yeah!', colorString);
     document.getElementById("buttonall").style.backgroundColor = `rgb(${colorString})`;
+    countDown = 10
+    updateCount()
 }
 
 var currentColor = Array (0,0,0);
@@ -31,7 +33,7 @@ function changeColor (r,g,b){
         winState()
     } 
 }
-var winCount = 0;
+var winCount = 2;
     
 
 function winState (){
@@ -41,4 +43,16 @@ function winState (){
 
 }
 
+var countDown = 10;
+  function updateCount() {
+   countDown = countDown - 1;
+   setTimeout(updateCount, 1000);
+   if (countDown >= 0 ){
+       
+    document.getElementById("countDown").innerHTML = countDown;
+}
+   if (countDown <= 0 ){
+    winCount = 0
+    document.getElementById("winCount").innerHTML = winCount;
 
+   }}

@@ -9,19 +9,44 @@
    
 </head>
 <body>
+    
+    <div class = "Timerdiv">
+        <h2> Timer: <span id="countDown"> 10 </span> seconds </h2>
+    </div>
+    
+    <div class = "buttongroup">
+        <h1> Win:<span id="winCount">2</span> </h1> 
+        <button id="buttonall" onclick="setBackgroundColor()"> Start </button>
+        <button id="buttonredplus" onclick="changeColor(15,0,0)"> + </button>
+        <button id="buttonredminus" onclick="changeColor(-15,0,0)"> - </button>
+        <button id="buttongreenplus" onclick="changeColor(0,15,0)"> + </button>
+        <button id="buttongreenminus" onclick="changeColor(0,-15,0)"> - </button>
+        <button id="buttonblueplus" onclick="changeColor(0,0,15)"> + </button>
+        <button id="buttonblueminus" onclick="changeColor(0,0,-15)"> - </button>
+    </div>
+    
+    <div class ="Redgroup">
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+        <div class = "cell"></div>
+    </div>
+
+    <div class="container" style="--m: 8; --tan: 0.41">
+        <a href='#'>
+          <img src="image_mid.jpg" alt="alt text"/>
+        </a>
+        <a style="--i: 1">
+          <img src="first_img_on_circle.jpg" alt="alt text"/>
+        </a>
+        <!-- the rest of those placed on the circle -->
+      </div>
+    
+    <div class ="Redsquare"></div>
+
     <script src="script.js"></script>
 
-    
-
-    <div class = "buttongroup">
-    <h1> Win:<span id="winCount">0</span> </h1> 
-    <button id="buttonall" onclick="setBackgroundColor()"> Start </button>
-    <button id="buttonredplus" onclick="changeColor(15,0,0)"> + </button>
-    <button id="buttonredminus" onclick="changeColor(-15,0,0)"> - </button>
-    <button id="buttongreenplus" onclick="changeColor(0,15,0)"> + </button>
-    <button id="buttongreenminus" onclick="changeColor(0,-15,0)"> - </button>
-    <button id="buttonblueplus" onclick="changeColor(0,0,15)"> + </button>
-    <button id="buttonblueminus" onclick="changeColor(0,0,-15)"> - </button>
-    </div>
 </body>
 </html>
