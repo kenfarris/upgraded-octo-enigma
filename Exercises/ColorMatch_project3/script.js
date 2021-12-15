@@ -55,4 +55,53 @@ var countDown = 10;
     winCount = 0
     document.getElementById("winCount").innerHTML = winCount;
 
-   }}
+   }
+  }
+
+   function setCellColor(){
+   var babysorry = document.getElementsByClassName("Redsquare")[0];
+    let rValue = 255;
+    let gValue = 0;
+    let bValue = 0;
+    var cellindex= 0;
+    for(i=255; i>0; i=i-30) {
+        colorString = [i, gValue, bValue]
+        babysorry.children[cellindex].style.backgroundColor = `rgb(${colorString})`;
+        babysorry.children[cellindex].innerHTML = "hi";
+        cellindex = cellindex+1
+    console.log("ok");
+    }
+}
+
+function setGreenCellColor(){
+    var babysorry = document.getElementsByClassName("Greensquare")[0];
+     let rValue = 0;
+     let gValue = 255;
+     let bValue = 0;
+     var cellindex= 0;
+     for(i=255; i>0; i=i-30) {
+         colorString = [rValue, i, bValue]
+         babysorry.children[cellindex].style.backgroundColor = `rgb(${colorString})`;
+         babysorry.children[cellindex].innerHTML = "hi";
+         cellindex = cellindex+1
+     console.log("ok");
+     }
+ }
+
+ function setBlueCellColor(){
+    var babysorry = document.getElementsByClassName("Bluesquare")[0];
+     let rValue = 0;
+     let gValue = 0;
+     let bValue = 255;
+     var cellindex= 0;
+     for(i=255; i>0; i=i-30) {
+         colorString = [rValue, gValue, i]
+         babysorry.children[cellindex].style.backgroundColor = `rgb(${colorString})`;
+         babysorry.children[cellindex].innerHTML = "hi";
+         cellindex = cellindex+1
+     console.log("ok");
+     }
+ }
+setCellColor()
+setGreenCellColor()
+setBlueCellColor()
