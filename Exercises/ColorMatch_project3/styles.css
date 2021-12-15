@@ -77,6 +77,27 @@ height: 650px;
   justify-content: space-between;
 }
 
+.cell{
+  animation: lookOut;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.6, 0.87, 0.59, 0.46);
+  animation-delay: 0s;
+}
+
+.startButton {
+  border-radius: 50%;
+  background-color: beige; 
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 .circle-container {
   position: relative;
   width: 24em;
