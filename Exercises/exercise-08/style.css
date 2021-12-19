@@ -2,22 +2,32 @@ li{
     width:30px;
     height: 30px;
     border-radius: 50%;
-    border: 2px black;
     margin: 20px;
+    
 
 }
-
- Button Colors
+body{
+    background-color: pink;
+}
 
 
 #grayButton{
     background-color: grey;
+    border: 5px black solid;
+
 }
 
 #whiteButton{
     background-color: white;
+    border: 5px black solid;
 }
 
 #blueButton{
     background-color: blue;
+    border: 5px black solid;
+}
+
+#yellowButton{
+    background-color: yellow;
+    border: 5px black solid;
 }

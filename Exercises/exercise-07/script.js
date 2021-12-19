@@ -7,11 +7,11 @@ let array_one = [
   ];
 
   let array_two = [
-    "among other houses",
-    "among small hills",
-    "among high montains",
-    "by a river",
-    "by an abandoned lake"
+    " among other houses",
+    " among small hills",
+    " among high montains",
+    " by a river",
+    " by an abandoned lake"
   ];
 
 function renderPoem() {
@@ -21,7 +21,5 @@ function renderPoem() {
     let element_from_array_two = array_two[Math.floor(Math.random()*array_two.length)];
     let paragraph = document.createElement("p");
     paragraph.textContent=`${element_from_array_one}${element_from_array_two}`;
+    document.body.appendChild(paragraph);
 }
-
-  let btn = document.querySelector("button");
-  btn.addEventListener("click",renderPoem);

@@ -1,0 +1,59 @@
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%；
+}
+
+body{
+    font-family: 'Moo Lah Lah', cursive;
+    font-size: 60px;
+}
+
+nav{
+    height:60%;
+}
+
+main{
+    height:80%;
+    background:tomato;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+  
+    list-style: none;
+    background: black;
+    line-height: 60px;
+  }
+
+  .container a {
+    text-decoration: bold;
+    color: white;
+}
+
+Li{
+    padding: 0 40px;
+}
+
+li:hover {
+    animation: changeMe 1s ease-in-out .2s;
+  }
+  
+  @keyframes changeMe {
+    0% {
+      background-color: lightblue;
+    }
+    50%{
+      background-color: blue;
+    }
+    75%{
+      background-color: darkblue;
+    }
+    100% {
+      background-color: black);
+    }
+  }
