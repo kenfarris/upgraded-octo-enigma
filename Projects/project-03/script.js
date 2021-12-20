@@ -70,8 +70,14 @@ var bValue = 0;
 var currentColor = Array (rValue,gValue,bValue);
 var winColorString = Array (0,0,0);
 
+var pastCell;
 
-  function setColor(colorString){
+  function setColor(event, colorString){
+    toggleCells();
+    // pastCell.classList.remove("activeCell");
+    var cell = event.target;
+    cell.classList.add("activeCell");
+    pastCell = cell;
     var rCellValue = colorString.split(",")[0];
     var gCellValue = colorString.split(",")[1];
     var bCellValue = colorString.split(",")[2];
@@ -86,46 +92,56 @@ var winColorString = Array (0,0,0);
     } 
   }
 
+  function toggleCells(){
+    var slides = document.getElementsByClassName("cell");
+    console.log("It works");
+    for (var i = 0; i < slides.length; i++) {
+        //    Distribute(slides.item(i));
+        slides[i].classList.remove("activeCell");
+        
+    }
+  }
+
    function setCellColor(){
-   var babysorry = document.getElementsByClassName("Redsquare")[0];
+   var colorinfinity = document.getElementsByClassName("Redsquare")[0];
     let rValue = 255;
     let gValue = 0;
     let bValue = 0;
     var cellindex= 0;
     for(i=255; i>0; i=i-30) {
         colorString = [i, gValue, bValue]
-        babysorry.children[cellindex].style.backgroundColor = `rgb(${colorString})`;
-        babysorry.children[cellindex].innerHTML = colorString;
+        colorinfinity.children[cellindex].style.backgroundColor = `rgb(${colorString})`;
+        colorinfinity.children[cellindex].innerHTML = colorString;
         cellindex = cellindex+1
     console.log("ok");
     }
 }
 
 function setGreenCellColor(){
-    var babysorry = document.getElementsByClassName("Greensquare")[0];
+    var colorinfinity = document.getElementsByClassName("Greensquare")[0];
      let rValue = 0;
      let gValue = 255;
      let bValue = 0;
      var cellindex= 0;
      for(i=255; i>0; i=i-30) {
          colorString = [rValue, i, bValue]
-         babysorry.children[cellindex].style.backgroundColor = `rgb(${colorString})`;
-         babysorry.children[cellindex].innerHTML = colorString;
+         colorinfinity.children[cellindex].style.backgroundColor = `rgb(${colorString})`;
+         colorinfinity.children[cellindex].innerHTML = colorString;
          cellindex = cellindex+1
      console.log("ok");
      }
  }
 
  function setBlueCellColor(){
-    var babysorry = document.getElementsByClassName("Bluesquare")[0];
+    var colorinfinity = document.getElementsByClassName("Bluesquare")[0];
      let rValue = 0;
      let gValue = 0;
      let bValue = 255;
      var cellindex= 0;
      for(i=255; i>0; i=i-30) {
          colorString = [rValue, gValue, i]
-         babysorry.children[cellindex].style.backgroundColor = `rgb(${colorString})`;
-         babysorry.children[cellindex].innerHTML = colorString;
+         colorinfinity.children[cellindex].style.backgroundColor = `rgb(${colorString})`;
+         colorinfinity.children[cellindex].innerHTML = colorString;
          cellindex = cellindex+1
      console.log("ok");
      }
