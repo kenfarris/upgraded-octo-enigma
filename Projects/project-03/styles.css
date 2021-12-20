@@ -87,9 +87,14 @@ height: 650px;
 }
 
 .activeCell {
-  border: 1px solid black;
+  border: 1.5px solid white;
   /* TODO: make style for selected cell */
 
+}
+
+table, th, td{
+border: black solid 1px;
+border-collapse: collapse;
 }
 
 .square {
