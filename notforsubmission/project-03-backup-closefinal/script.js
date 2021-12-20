@@ -11,7 +11,7 @@ function setBackgroundColor(){
     winColorString = [random_item(items),random_item(items),random_item(items)]
     console.log('Yeah!', winColorString);
     document.getElementById("buttonall").style.backgroundColor = `rgb(${winColorString})`;
-    countDown = 100
+    countDown = 10
     updateCount()
 }
 
