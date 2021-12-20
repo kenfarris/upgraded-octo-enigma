@@ -5,7 +5,7 @@ function getRandomInt(min=0, max=17 ) {
 }
 
 function setBackgroundColor(){
-    // let random1 = (Math.floor(getRandomInt() * 30) + 15) % 256;
+    // let random1 = (Math.floor(getRandomInt() * 31) + 15) % 256;
     // let random2 = (Math.floor(getRandomInt() * 30) + 15) % 256;
     // let random3 = (Math.floor(getRandomInt() * 30) + 15) % 256;
     winColorString = [random_item(items),random_item(items),random_item(items)]
