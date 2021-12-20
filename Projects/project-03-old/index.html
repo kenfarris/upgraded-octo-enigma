@@ -14,31 +14,16 @@
 </head>
     <body>
 
-        <div class = "TimerWin">
+ 
         <div class = "Timerdiv">
-            <h5> <span id="countDown"> 100 </span> </h5>
-        </div>
-        <div class = "rgb">
-            <h5> <span id="setCellColor"> 0,0,0 </span> </h5>
-        </div>
-        <div class = "Windiv">
-            <h5> <span id="winCount">0</span> </h5> 
-        </div>
+            <h2> Timer: <span id="countDown"> 10 </span> seconds </h2>
         </div>
 
-        <div class = "square" >
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-        </div>
+            <h1> Win:<span id="winCount">0</span> </h1> 
 
-        <div class ="Redsquare square" > 
+    <table>
+        <tr>
+        <div class ="Redsquare square" >
             <div class = "cell"onclick="setColor(event,'255,0,0') "></div>
             <div class = "cell"onclick="setColor(event,'235,0,0') "></div>
             <div class = "cell"onclick="setColor(event,'195,0,0') "></div>
@@ -48,20 +33,10 @@
             <div class = "cell"onclick="setColor(event,'75,0,0') "></div>
             <div class = "cell"onclick="setColor(event,'45,0,0') "></div>
             <div class = "cell"onclick="setColor(event,'15,0,0') "></div>
-            </div>
-        
-        <div class = "square" >
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
         </div>
- 
+        </tr>
+
+        <tr>
         <div class ="Greensquare square">
             <div class = "cell"onclick="setColor(event,'0,255,0') "></div>
             <div class = "cell"onclick="setColor(event,'0,235,0') "></div>
@@ -73,19 +48,9 @@
             <div class = "cell"onclick="setColor(event,'0,45,0') "></div>
             <div class = "cell"onclick="setColor(event,'0,15,0') "></div>
         </div>
+        </tr>
 
-        <div class = "square" >
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-        </div>
-
+        <tr>
         <div class ="Bluesquare square">
             <div class = "cell"onclick="setColor(event,'0,0,255') "></div>
             <div class = "cell"onclick="setColor(event,'0,0,235') "></div>
@@ -97,25 +62,10 @@
             <div class = "cell"onclick="setColor(event,'0,0,45') "></div>
             <div class = "cell"onclick="setColor(event,'0,0,15') "></div>
         </div>
+        </tr>
+    </table>
 
-        <div class = "square" >
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-            <div class = "blankcell"></div>
-        </div>
-
-        <div class = "square" >
-            <div class="startcell"><button id="buttonall" onclick="setBackgroundColor()"> Start </button></div>
-        </div>
-    
-    
-
+        <button id="buttonall" onclick="setBackgroundColor()"> Start </button>
 
         <script src="script.js"></script>
     </body>

@@ -5,13 +5,13 @@ function getRandomInt(min=0, max=17 ) {
 }
 
 function setBackgroundColor(){
-    // let random1 = (Math.floor(getRandomInt() * 30) + 15) % 256;
+    // let random1 = (Math.floor(getRandomInt() * 31) + 15) % 256;
     // let random2 = (Math.floor(getRandomInt() * 30) + 15) % 256;
     // let random3 = (Math.floor(getRandomInt() * 30) + 15) % 256;
     winColorString = [random_item(items),random_item(items),random_item(items)]
     console.log('Yeah!', winColorString);
     document.getElementById("buttonall").style.backgroundColor = `rgb(${winColorString})`;
-    countDown = 100
+    countDown = 10
     updateCount()
 }
 
@@ -102,20 +102,20 @@ var pastCell;
     }
   }
 
-  function setCellColor(){
-    var colorinfinity = document.getElementsByClassName("Redsquare")[0];
-     let rValue = 255;
-     let gValue = 0;
-     let bValue = 0;
-     var cellindex= 0;
-     for(i=255; i>0; i=i-30) {
-         colorString = [i, gValue, bValue]
-         colorinfinity.children[cellindex].style.backgroundColor = `rgb(${colorString})`;
-        //  colorinfinity.children[cellindex].innerHTML = colorString;
-         cellindex = cellindex+1
-     console.log("ok");
-     }
- }
+   function setCellColor(){
+   var colorinfinity = document.getElementsByClassName("Redsquare")[0];
+    let rValue = 255;
+    let gValue = 0;
+    let bValue = 0;
+    var cellindex= 0;
+    for(i=255; i>0; i=i-30) {
+        colorString = [i, gValue, bValue]
+        colorinfinity.children[cellindex].style.backgroundColor = `rgb(${colorString})`;
+        colorinfinity.children[cellindex].innerHTML = colorString;
+        cellindex = cellindex+1
+    console.log("ok");
+    }
+}
 
 function setGreenCellColor(){
     var colorinfinity = document.getElementsByClassName("Greensquare")[0];
@@ -126,7 +126,7 @@ function setGreenCellColor(){
      for(i=255; i>0; i=i-30) {
          colorString = [rValue, i, bValue]
          colorinfinity.children[cellindex].style.backgroundColor = `rgb(${colorString})`;
-        //  colorinfinity.children[cellindex].innerHTML = colorString;
+         colorinfinity.children[cellindex].innerHTML = colorString;
          cellindex = cellindex+1
      console.log("ok");
      }
@@ -141,13 +141,11 @@ function setGreenCellColor(){
      for(i=255; i>0; i=i-30) {
          colorString = [rValue, gValue, i]
          colorinfinity.children[cellindex].style.backgroundColor = `rgb(${colorString})`;
-        //  colorinfinity.children[cellindex].innerHTML = colorString;
+         colorinfinity.children[cellindex].innerHTML = colorString;
          cellindex = cellindex+1
      console.log("ok");
      }
  }
-
- setCellColor()
-
+setCellColor()
 setGreenCellColor()
 setBlueCellColor()
