@@ -14,6 +14,19 @@ h1{
   font-size: 20px;
 }
 
+h6{
+  font-style: italic;
+  align-self: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h5{
+  display: flex;
+  align-self: center;
+  margin-top: 0px;
+  font-weight: normal;
+}
 
 /* button {
   background-color: white;
@@ -95,7 +108,7 @@ height: 650px; */
   padding: 0px;
   margin-left: 5px;
   margin-right: 5px;
-  outline: solid 1px black;
+  outline: solid 1px rgb(39, 39, 39);
   outline-offset: 5px;
 }
 
@@ -105,7 +118,7 @@ height: 650px; */
   padding: 0px;
   margin-left: 5px;
   margin-right: 5px;
-  outline: solid 1px black;
+  outline: solid 1px rgb(39, 39, 39);
   outline-offset: 5px;
   display: flex;
   justify-content: center;
@@ -113,7 +126,7 @@ height: 650px; */
 }
 
 .activeCell {
-  box-shadow: rgba(30, 30, 30, 0.16) 0px 1px 4px, rgb(30, 30, 30) 0px 0px 0px 5px;
+  box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 5px;
   /* TODO: make style for selected cell */
 
 }
@@ -157,17 +170,28 @@ height: 650px; */
   justify-content: space-between;
   width: 100%;
   margin: 10px;
+  align-self: center;
 }
 .Timerdiv{
+display: flex;
 width: fit-content;
 margin: 0px;
+align-content: center;
+flex-direction: column;
 }
 
 .Windiv{
+  display: flex;
   width: fit-content;
   margin-right: 40px;
+  align-content: center;
+  flex-direction: column;
 }
-
+.rgb{
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
 img {
   position: absolute;
   z-index: -2;
